@@ -58,11 +58,11 @@ const fetchData = async ()=> {
 //imprime en Card
 const printCard = data => {
     data.forEach (producto  => {
-      templateCard.querySelector ('h4').textContent = producto.name
+      templateCard.querySelector('h4').textContent = producto.name
     //   templateCard.querySelector ('h7').textContent = producto.amount
-      templateCard.querySelector ('p').textContent = producto.price
-      templateCard.querySelector ('img').setAttribute("src", producto.img)
-      templateCard.querySelector ('.btn-dark').dataset.id = producto.id
+      templateCard.querySelector('p').textContent = producto.price
+      templateCard.querySelector('img').setAttribute("src", producto.img)
+      templateCard.querySelector('.btn-dark').dataset.id = producto.id
     
       const clone = templateCard.cloneNode(true)
       fragment.appendChild(clone)
@@ -178,8 +178,6 @@ compraFinal.addEventListener('click', () =>{
 //Menu Responsive Vertical
 const botMenu = document.querySelector(".botMenu")
 const nav2vert = document.querySelector(".nav2vertical")
-
 botMenu.addEventListener('click', () =>{
     nav2vert.classList.toggle("nav-menu-visible")
-
 })
