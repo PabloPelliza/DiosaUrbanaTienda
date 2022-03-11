@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="dist/hamburgers.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Diosa Urbana</title>
+</head>
+<body>
+  <nav class="navMain">
+    <img src="/img/logo diosa.png" class="logoNav"></img>
+    <h5 class="textLogo">Diosa Urbana</h5> 
+
+    <div class="navcontenedor">   
+      <div class="nav2vertical nav-menu-visible">
+        <navbar class="navprop">
+          <ul class="contenedorli ">
+              <li>
+                <a href="#" class="hover-border">Inicio</a>
+              </li>
+              <li>
+                  <a href="#noticias" class="hover-border">Nosotros</a>
+              </li>
+              <li>
+                  <a href="#productos" class="hover-border">Productos</a>
+              </li>
+           </ul>
+        </navbar>
+    </div>
+    
+    
+    <div class="contenedorboton">
+      <a href="registrate.html" target="_blank">
+          <button> Registrarse</button>
+      </a>
+      <a href="acceder.html" target="_blank">
+          <button>Acceder</button>
+      </a>
+        <div class="carri" href="#comprasRealizadas">
+           <img src="img/cart.svg" alt="Compra" >
+        </div>
+    </div>
+    
+    <div class="menuBar">
+      <a class="botMenu">
+        <img src="/img/elipsis.png" class="imgMenu"></img>
+      </a>
+    </div> 
+        
+  </div>
+    
+  </nav>
+
+  <div class="contenedormarco">
+    <h1 Class="h1">DIOSA URBANA</h1>
+    <div class="marco">
+        <img class="Logo animate__animated animate__zoomIn w-75" src="/img/diosa-urbana.jpg">
+    </div>
+    <div class="contenedortitulo">
+        <h2 class="H2">Carteras y más...</h2>
+       
+    </div>
+            
+ </div> 
+  
+ <section id="noticias">
+   <div class="divNoticias">
+     
+     <div class="col-md-6 text-center">
+      <p class="textnoti">Carteras, mochilas y riñoneras, hechas a mano y con el corazón, para que cada Diosa brille donde sea que pase...</p>
+      <video src="/img/mochila red passion.mp4" id="videoNoti" controls muted autoplay loop class="vid"></video>
+    </div>
+    <div class="sliderImg">
+        <div class="carrusel">
+          <figure><img src="/img/diosa/DSC_0115.jpg"></figure>
+          <figure><img src="/img/diosa/DSC_0336.jpg"></figure>
+          <figure><img src="/img/diosa/DSC_0344.jpg"></figure>
+          <figure><img src="/img/diosa/DSC_0348.jpg"></figure>
+          <figure><img src="/img/diosa/DSC_0372.jpg"></figure>
+          <figure><img src="/img/diosa/DSC_1226.jpg"></figure>
+          <figure><img src="/img/diosa/DSC_0344.jpg"></figure>
+          <figure><img src="/img/diosa/DSC_0372.jpg"></figure>
+           
+        </div>
+    </div>
+   </div>
+   
+   
+ </section>
+ <img id="productos" class="imgBorder" src="/img/bannerPoke.jpg">
+
+ <div class="container" >
+      <h3>Productos</h3>
+      <hr>
+      <section class="contenedorInput">
+       <div>
+         <input type="text" name="buscador" id="buscador" placeholder="Buscar Producto">
+       </div>
+        <br>
+       </section>
+        <div class="row text-center" id="cards"></div> 
+  
+        <br>
+      <h3 id="comprasRealizadas">Compras</h3>
+      <hr>
+      
+       <table class="table">
+         <thead>
+          <tr>
+            <th scope="col">Código</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Cantidad</th>
+            <th scope="col">Acción</th>
+            <th scope="col">Total</th>
+          </tr>
+        </thead>
+        <tbody id="items"></tbody>
+        <tfoot>
+          <tr id="footer">
+            <th scope="row" colspan="5" >Carrito vacío - ¡comience a comprar!</th>
+            <div scope="row"></div>
+          </tr>
+          </tfoot>
+          
+      </table>     
+
+      
+    <template id="template-footer">
+        <th scope="row" colspan="2">Total productos</th>
+        <td>10</td>
+        <td>
+            <button class="btn btn-danger btn-sm" id="vaciar-carrito">
+                vaciar todo
+            </button>
+        </td>
+        <td class="font-weight-bold">$ <span>5000</span></td>
+        
+    </template>
+
+    <button class="btn-main" id="compraFinal">COMPRAR</button> 
+    <br>
+    <div class="popup" id="popupCompra"> 
+      <div class="contentBox">
+        <div class="close" id="close"></div> 
+         <div class="imgBx"> 
+            <img src="/img/surprise-box.png" alt="">
+         </div>
+        <div class="contentCompra">
+           <div>
+             <h3>¡Muchas gracias por tu compra!</h3>
+             <p>Podés coordinar con nuestro representante para retirar el producto por el local, o nos estaremos comunicando a la brevedad para enviarte la compra a tu domicilio. <br>¡QUE LO DISFRUTES!</p>
+            </div>
+        </div>
+      </div>  
+    </div> 
+    
+
+  <template id="template-carrito">
+    <tr>
+      <th scope="row">id</th>
+      <td>Name</td>
+      <td>1</td>
+      <td>
+          <button class="btn btn-info btn-sm">
+              +
+          </button>
+          <button class="btn btn-danger btn-sm">
+              -
+          </button>
+      </td>
+      <td>$ <span>500</span></td>
+    </tr>
+ </template>
+</div>
+
+    <template id="template-card">
+        <div class="col-12 mb-2 col-md-4">
+          <div class="card">          
+            <div class="card-body">
+              <div class="sinStock">Sin Stock</div>
+              <img src="" alt="" class="card-img-top w-50">
+              <h4 class="namebusqueda">Titulo</h4>
+              <!-- <h7>Cantidad</h7> -->
+              <span class="spanPrice">$<p>precio</p></span> 
+             <button class="btn btn-dark" id="btn-dark">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+      </template>
+
+      
+      <section class="footy">
+        <footer class="footer">
+          <div class="contFoot">
+            <section>Contactanos</section>
+            <hr>
+            <section>Preguntas frecuentes</section>
+            <hr>
+            <section>Nuestras Redes</section>
+          </div>
+               <div class="creado">
+                  <p>Creado por Pablo Pelliza</p>
+               </div>
+        </footer>
+      </section>
+      <script src="index.js"></script>
+</body>
+</html>
