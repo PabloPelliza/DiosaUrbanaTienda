@@ -289,15 +289,18 @@ ul:hover a:hover{
       display: none;
    }
    .sliderImg{
-      transform: scale(0.6);
+      transform: scale(0.6)
+   }
+   .carrusel{
       position: relative;
-      left: 80vw;
+      right: 86%;
    }
   
-   .popup{
-      transform: scale(0.3);
+   .contentBox{
+      transform: scale(0.8);
       position: fixed;
-      top: 50%;
+      top: 34vh;
+      left: 15vw;
     }
 }
 @media screen and (max-width: 860px){
