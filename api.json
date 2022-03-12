@@ -1,41 +1,41 @@
 [
     {   
-        "img":"img/diosa/DSC_0344.JPG",
+        "img":"./img/diosa/DSC_0344.jpg",
         "id": 1,
         "name": "Mochila Black Relief",
         "amount": 5,
         "price": 1200
     },
     {
-        "img":"img/diosa/DSC_0348.JPG",
+        "img":"./img/diosa/DSC_0348.jpg",
         "id": 2,
         "name": "Mochila Red Passion",
         "amount": 10,
         "price": 1600 
     },
     {
-        "img":"img/diosa/DSC_0115.JPG",
+        "img":"./img/diosa/DSC_0115.jpg",
         "id": 3,
         "name": "Mochila Space Shine",
         "amount": 2,
         "price": 1500
     },
     {
-        "img":"img/diosa/DSC_0336.JPG",
+        "img":"./img/diosa/DSC_0336.jpg",
         "id": 4,
         "name": "Riñonera Pink Iridicent",
         "amount": 15,
         "price": 800
     },
     {
-        "img":"img/diosa/DSC_0372.JPG",
+        "img":"./img/diosa/DSC_0372.jpg",
         "id": 5,
         "name": "Riñonera Marilyn Red",
         "amount": 10,
         "price": 650
     },
     {
-        "img":"img/diosa/DSC_1226.JPG",
+        "img":"./img/diosa/DSC_1226.jpg",
         "id": 6,
         "name": "Riñonera Fractal Pink",
         "amount": 4,
